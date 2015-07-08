@@ -1,23 +1,19 @@
-var crypto = require('crypto');
-var hash = crypto.createHash('sha512');
-var hashHex = hash.digest('hex');
-console.log(hashHex);
 
-var mysql      = require('mysql');
+var Memento = require('./index');
 
-var connection = mysql.createConnection({
+var mysqlConfig = {
   host     : 'localhost',
   user     : 'root',
   password : '',
   database : 'benchmark'
-});
+};
 
-connection.connect();
+var memcachedConfig = "127.0.0.1:11211";
 
-connection.query('SELECT * FROM test', function(err, rows, fields) {
+var memento = new Memento({mysql: mysqlConfig, memcached: memcachedConfig});
+
+memento.query('SELECT * FROM test', function(err, rows, fields) {
   if (err) throw err;
 
   console.log(rows);
 });
-
-connection.end();
