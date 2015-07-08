@@ -1,0 +1,19 @@
+	Memento - MySQL query caching for Node.js
+	-----------------------------------------
+
+	>> About
+
+	Memento is a MySQL query caching module
+	for Node.js. Memento uses memcached to
+	cache MySQL query's results in order to
+	improve Node.js applications performance.
+
+	>> Required modules
+
+	Memento needs the following modules to run:
+
+		node-mysql
+		node-memcached
+	
+	-----------------------------------------
+	  https://github.com/maxlabelle/Memento
