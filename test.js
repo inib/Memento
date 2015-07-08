@@ -12,7 +12,7 @@ var memcachedConfig = "127.0.0.1:11211";
 
 var memento = new Memento({mysql: mysqlConfig, memcached: memcachedConfig});
 
-memento.query('SELECT * FROM test', function(err, rows, fields) {
+memento.query('SELECT * FROM test LIMIT 1', function(err, rows, fields) {
   if (err) throw err;
 
   console.log(rows);
