@@ -12,8 +12,12 @@
 
 	Memento needs the following modules to run:
 
-		node-mysql
-		node-memcached
+	node-mysql
+		https://github.com/felixge/node-mysql
+
+	node-memcached
+		https://github.com/3rd-Eden/memcached
+
 	
 	-----------------------------------------
 	  https://github.com/maxlabelle/Memento

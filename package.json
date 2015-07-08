@@ -1,0 +1,25 @@
+{
+  "name": "memento",
+  "version": "1.0.0",
+  "description": "MySQL query caching for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxlabelle/Memento.git"
+  },
+  "keywords": [
+    "mysql",
+    "query",
+    "caching",
+    "memcached"
+  ],
+  "author": "Maxime Labelle <maxime.labelle@owasp.org> (http://github.com/maxlabelle)",
+  "license": "BSD-4-Clause",
+  "bugs": {
+    "url": "https://github.com/maxlabelle/Memento/issues"
+  },
+  "homepage": "https://github.com/maxlabelle/Memento#readme"
+}
