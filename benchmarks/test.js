@@ -20,6 +20,8 @@ memento.query('SELECT * FROM test LIMIT 1', function(err, rows, fields) {
 	var end = new Date().getTime();
 	var time = end - start;
 	console.log('Execution time: ' + time);
+	
+	memento.finish();
 });
 
 

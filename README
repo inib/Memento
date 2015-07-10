@@ -23,7 +23,7 @@
 	
 	Query usage is very similar to node.js mysql module;
 
-		var Memento = require('./index');
+		var Memento = require('memento');
 
 		var mysqlConfig = {
 			host     : 'localhost',
@@ -44,8 +44,19 @@
 				if (err) throw err;
 
 				console.log(rows);
+				
+				memento.finish();
 			}
 		);
-			 
+		
+	Memento needs to be initialized with both the MySQL
+	connection configuration object and the Memcached 
+	connection configuration object. Both these objects
+	are the same you would normally pass to the MySQL module
+	and the Memcached module.
+	
+	Once you are done with Memento, you need to call the
+	finish() method to clean up the connections.
+	
 	------------------------------------------------------
 			https://github.com/maxlabelle/Memento
