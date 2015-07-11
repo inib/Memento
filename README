@@ -85,6 +85,12 @@
 	connection configuration object. Both these objects
 	are the same you would normally pass to the MySQL module
 	and the Memcached module.
+
+	The queries are cached for 5 minutes (300 seconds) by
+	default. You can change the timeout value in seconds
+	by changing	the cacheTimeout variables;
+	
+		memento.cacheTimeout = 900; // 15 minutes
 	
 	Once you are done with Memento, you need to call the
 	finish() method to clean up the connections.
