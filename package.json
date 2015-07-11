@@ -1,5 +1,5 @@
 {
-  "name": "memento",
+  "name": "memento-mysql",
   "version": "1.0.0",
   "description": "MySQL query caching for node.js",
   "main": "index.js",

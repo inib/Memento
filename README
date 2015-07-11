@@ -48,13 +48,13 @@
 	
 	>> Installation
 	
-		$ npm install memento
+		$ npm install memento-mysql
 		
 	>> Usage
 	
 	Query usage is very similar to node.js mysql module;
 
-		var Memento = require('memento');
+		var Memento = require('memento-mysql');
 
 		var mysqlConfig = {
 			host     : 'localhost',
