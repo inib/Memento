@@ -7,6 +7,37 @@
 	Memento uses memcached to improve Node.js applications 
 	performance.
 
+	>> Quick benchmarks
+	
+	The following queries were ran against one table with
+	100 000 rows of random data. These are the execution
+	times to return all rows from each query:
+
+	"SELECT * FROM test WHERE id>10000 LIMIT 1"
+	
+		Without Memento : 0.023 seconds
+		With Memento : 0.011 seconds	
+
+	"SELECT * FROM test WHERE id>10000 LIMIT 250"
+	
+		Without Memento : 0.027 seconds
+		With Memento : 0.012 seconds	
+
+	"SELECT * FROM test WHERE id>10000 LIMIT 1000"
+	
+		Without Memento : 0.033 seconds
+		With Memento : 0.014 seconds	
+
+	"SELECT * FROM test WHERE id>10000 LIMIT 2500"
+	
+		Without Memento : 0.042 seconds
+		With Memento : 0.018 seconds	
+
+	"SELECT * FROM test WHERE id>10000 LIMIT 5000"
+	
+		Without Memento : 0.063 seconds
+		With Memento : 0.025 seconds	
+
 	>> Required modules
 
 	Memento needs the following modules to run:
