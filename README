@@ -1,4 +1,4 @@
-			Memento - MySQL query caching for Node.js
+	Memento - MySQL query caching for Node.js
 	------------------------------------------------------
 
 	>> About
@@ -90,4 +90,4 @@
 	finish() method to clean up the connections.
 	
 	------------------------------------------------------
-			https://github.com/maxlabelle/Memento
+	https://github.com/maxlabelle/Memento
